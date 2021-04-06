@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-red: hsl(356, 100%, 66%);
+  --very-light-red: hsl(355, 100%, 74%);
+  --very-dark-blue: hsl(208, 49%, 24%);
+  --white: hsl(0, 0%, 100%);
+  --grayish-blue: hsl(240, 2%, 79%);
+  --very-dark-grayish-blue: hsl(207, 13%, 34%);
+  --very-dark-black-blue: hsl(240, 10%, 16%);
+  --very-dark-gray-blue: hsl(237, 17%, 21%);
+  --very-dark-desaturated-blue: hsl(237, 23%, 32%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--white);
+}
+
+body, input, button {
+  /* font-family: 'Overpass', sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.landing-page {
+  height: 90vh;
+  background: url('./assets/bg-pattern-intro.svg') no-repeat left top, linear-gradient(to right, #FF8D70, #FF485A);
+  background-position: 25% 52%;
+  border-bottom-left-radius: 10rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 115rem;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+}
+
+.left {
+  display: flex;
+  align-items: flex-end;
+}
+
+.left h1 {
+  color: var(--white);
+  font-size: 4rem;
+}
+
+.navbar-nav {
+  margin: .5rem 5rem;
+}
+
+.navbar-nav a {
+  margin: 0 1rem;
+  text-decoration: 0;
+}
+
+.navbar-nav a span {
+  color: #f0f0f5;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-right: .85rem;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right a {
+  color: #f0f0f5;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.right button {
+  background: #f0f0f5;
+  border: 0;
+  padding: 1.5rem 4.25rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--light-red);
+  border-radius: 5rem;
+  margin-left: 4rem;
+  outline: 0;
+  cursor: pointer;
+}
+
+.landing-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+}
+
+.landing-text h1 {
+  color: #fafafa;
+  font-size: 6rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.landing-text h5 {
+  color: #fafafa;
+  font-size: 2rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+}
+
+.landing-text .buttons button {
+  border: 0;
+  padding: 1.5rem 2.25rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  border-radius: 5rem;
+  outline: 0;
+  cursor: pointer;
+  margin-top: 4rem;;
+}
+
+.landing-text .buttons .start {
+  color: var(--light-red);
+  margin-right: .85rem;
+}
+
+.landing-text .buttons .learn {
+  background: 0;
+  border: 1px solid #fafafa;
+  color: #fafafa;
+  margin-left: .85rem;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.qualities-one {
+  margin: 7rem 0;
+  padding: 5rem 0;
+  height: 130vh;
+  background: url('./assets/illustration-editor-desktop.svg') no-repeat 165% 0%;
+  background-size: contain;
+}
+
+h1.title {
+  color: var(--very-dark-blue);
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  margin-bottom: 12.5rem;
+}
+
+.content {
+  margin-bottom: 10rem;
+}
+
+.content h3 {
+  color: var(--very-dark-blue);
+  font-weight: 600;
+  font-family: 'Overpass', sans-serif;
+  font-size: 2.8rem;
+}
+
+.content p {
+  color: var(--very-dark-grayish-blue);
+  font-size: 1.6rem;
+  font-family: 'Overpass', sans-serif;
+  width: 55rem;
+  line-height: 2.5rem;
+  letter-spacing: .095rem;
+  margin-top: 3rem;
+}
+
+/* ******************************* */
+
+.section {
+  background: url('./assets/bg-pattern-circles.svg') no-repeat left top, linear-gradient(to right, var(--very-dark-gray-blue), var(--very-dark-desaturated-blue));
+  background-repeat: no-repeat;
+  background-position: -75% 80%;
+  border-top-right-radius: 10rem;
+  border-bottom-left-radius: 10rem;
+}
+
+.section .container {
+  padding: 9rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.section .container .left-content img {
+  position: absolute;
+  top: -6rem;
+  height: 50rem;
+}
+
+.section .title {
+  color: #fafafa;
+  font-size: 3rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+}
+
+.section p {
+  color: #fafafa;
+  font-size: 1.6rem;
+  font-family: 'Overpass', sans-serif;
+  width: 57rem;
+  line-height: 2.5rem;
+  letter-spacing: .095rem;
+  margin-top: 3rem;
+}
+
+.qualities-two {
+  margin: 7rem 0;
+  padding: 5rem 0;
+  height: 100vh;
+  background: url('./assets/illustration-laptop-desktop.svg') no-repeat -42% 0%;
+  background-color: #007fff;
+  background-size: contain;
+  display: flex;
+}
+
+.qualities-two .container {
+  display: flex;
+  position: relative;
+}
+
+.qualities-two .container .content-container {
+  background: red;
+  position: absolute;
+}
