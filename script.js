@@ -1,5 +1,7 @@
-function toggleDropdown(dropdownNumber) {
-  const dropdown = document.getElementsByClassName('dropdown')[dropdownNumber];
-  console.log(dropdown);
-  dropdown.classList.toggle('toggled');
+function menuToggle() {
+  const navbarNav = document.querySelector('.navbar-nav');
+  const menuHamburger = document.querySelector('.menu-hamburger');
+
+  navbarNav.classList.toggle('toggle');
+  menuHamburger.classList.toggle('toggle');
 }
